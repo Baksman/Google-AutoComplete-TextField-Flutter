@@ -35,6 +35,7 @@ class GooglePlaceAutoCompleteTextField extends StatefulWidget {
   FocusNode? focusNode;
   PlaceType? placeType;
   String? language;
+  VoidCallback? onTap;
 
   GooglePlaceAutoCompleteTextField(
       {required this.textEditingController,
@@ -42,6 +43,7 @@ class GooglePlaceAutoCompleteTextField extends StatefulWidget {
       this.debounceTime: 600,
       this.inputDecoration: const InputDecoration(),
       this.itemClick,
+      this.onTap,
       this.isLatLngRequired = true,
       this.textStyle: const TextStyle(),
       this.countries,
@@ -96,6 +98,7 @@ class _GooglePlaceAutoCompleteTextFieldState
           children: [
             Expanded(
               child: TextFormField(
+                onTap: onTap?.call(),
                 decoration: widget.inputDecoration,
                 style: widget.textStyle,
                 controller: widget.textEditingController,
