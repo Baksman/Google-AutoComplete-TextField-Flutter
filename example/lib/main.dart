@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:google_places_flutter/google_places_flutter.dart';
-import 'package:google_places_flutter/model/place_type.dart';
-import 'package:google_places_flutter/model/prediction.dart';
+import 'package:google_places_new_flutter/google_places_flutter.dart';
+import 'package:google_places_new_flutter/model/place_type.dart';
+import 'package:google_places_new_flutter/model/prediction.dart';
 
 void main() => runApp(MyApp());
 

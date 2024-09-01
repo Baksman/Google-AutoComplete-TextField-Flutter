@@ -83,7 +83,7 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
-  google_places_flutter:
+  google_places_new_flutter:
     dependency: "direct main"
     description:
       path: ".."
